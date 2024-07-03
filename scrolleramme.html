@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolleramme med Billeder</title>
+    <style>
+        body {
+            background-image: url('https://github.com/skfugl/birdie3/blob/main/Baggrund.jpg?raw=true');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .scroll-frame {
+            width: 80%;
+            height: 80%;
+            overflow-x: scroll;
+            white-space: nowrap;
+            border: 5px solid #000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .scroll-frame img {
+            height: 100%;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="scroll-frame">
+            <img src="https://github.com/skfugl/birdie3/blob/main/Billede1.jpg?raw=true" alt="Billede 1">
+            <img src="https://github.com/skfugl/birdie3/blob/main/Billede2.jpg?raw=true" alt="Billede 2">
+            <img src="https://github.com/skfugl/birdie3/blob/main/Billede3.jpg?raw=true" alt="Billede 3">
+        </div>
+    </div>
+</body>
+</html>
